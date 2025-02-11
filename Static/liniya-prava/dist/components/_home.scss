@@ -1,0 +1,19 @@
+/* .screen-6 */
+
+@media (min-width: 992px) {
+.timeline__line-years-decor-wrapper-animate {
+    transition: transform 0.4s ease;
+}
+
+.timeline__line-years-item:hover .timeline__line-years-decor-wrapper-animate {
+    transform: translateY(0.75rem);
+}
+
+.timeline-awards__logo-wrapper {
+    transition: transform 0.6s ease;
+}
+
+.timeline-awards__item:hover .timeline-awards__logo-wrapper {
+    transform: translateY(-0.75rem);
+}
+}

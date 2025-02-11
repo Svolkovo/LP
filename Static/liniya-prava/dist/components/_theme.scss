@@ -1,0 +1,21 @@
+.slider {
+    white-space: nowrap;
+    user-select: none;
+    transition: border 0.2s ease 0s;
+}
+
+.slider__tab {
+    transition: transform 0.4s ease;
+}
+
+.slider__tab--active {
+    transform: translateX(-100%);
+}
+
+#light {
+    transition: fill 0.3s ease;
+}
+
+#black {
+    transition: fill 0.3s ease;
+}

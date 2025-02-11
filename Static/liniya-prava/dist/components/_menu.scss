@@ -1,0 +1,38 @@
+.nav-list--lower {
+    opacity: 0;
+    transform: translateY(1rem);
+    user-select: none;
+    transition: all 0.3s ease 0s;
+    cursor: default;
+
+    a {
+        cursor: default;
+    }
+
+    &.active {
+        opacity: 1;
+        transform: translateY(0);
+        user-select: all;
+    }
+
+    a {
+        cursor: pointer;
+    }
+}
+
+.mobile-menu {
+    transition: transform 0.6s ease;
+}
+
+.mobile-content {
+    opacity: 0%;
+    transition: opacity 0.75s ease;
+}
+
+.mobile-menu--visible {
+    transform: translateX(0%);
+    .mobile-content {
+        opacity: 100%;
+        transition: opacity 0.75s ease 0.5s;
+    }
+}

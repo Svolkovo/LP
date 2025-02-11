@@ -1,0 +1,31 @@
+.btn--white {
+    transition: all 0.4s ease;
+}
+
+.btn--green {
+    transition: all 0.4s ease;
+}
+
+.btn-p {
+    transition: color 0.4s ease;
+}
+
+.btn--white:hover {
+    background-color: var(--green);
+    border-color: var(--green);
+    color: var(--black);
+
+    .btn-p {
+        color: var(--black);
+    }
+}
+
+.btn--green:hover {
+    background-color: transparent;
+    border-color: var(--white);
+    color: var(--white);
+
+    .btn-p {
+        color: var(--white);
+    }
+}

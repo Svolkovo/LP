@@ -1,0 +1,27 @@
+.filter-collection__checkbox-wrapper--active {
+    background-color: var(--green);
+    border-bottom-color: var(--white);
+}
+@media (maх-width: 991px) {
+    .filter-collection__checkbox-wrapper--active {
+        background-color: var(--green);
+        border-bottom-color: var(--green);
+    }
+}
+
+.filter-collection__checkbox-wrapper--active span,
+.filter-collection__checkbox-wrapper:hover span {
+    color: #000000;
+}
+
+.filters--active {
+    background-color: var(--green);
+}
+
+.filters--active .filters__name {
+    color: #000000;
+}
+
+.filters__name {
+    text-overflow: ellipsis;
+}

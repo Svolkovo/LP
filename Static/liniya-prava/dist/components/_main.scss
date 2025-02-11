@@ -1,0 +1,63 @@
+/* adding glow-neon effects on blocks */
+
+.glow-target {
+    position: relative;
+}
+
+.overflow-auto-horizontal {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* timeline settings */
+.overflow-auto-horizontal::-webkit-scrollbar {
+    display: none;
+}
+
+.pagination>.pagination__block:not(:last-child) {
+    margin-right: 0.125rem;
+}
+
+.pagination__block {
+    background-color: var(--medium-grey);
+    transition: background-color 0.3s ease;
+}
+
+.pagination__block--active {
+    background-color: var(--green);
+}
+
+/*
+.glow-target:hover .glow-neon {
+    z-index: -1;
+}
+
+.glow-target:hover .glow-neon__image {
+    opacity: 100%;
+    transform: scale(1.65, 1);
+    filter: saturate(100%);
+}
+
+.glow-target:hover .glow-neon__gradient {
+    transform: translateY(100%);
+    opacity: 100%;
+}
+*/
+
+.footer__link-wrapper .footer__link,
+.footer__submit-btn,
+.footer__phone,
+.footer__fax,
+.footer__anti-corruption,
+.footer__policy {
+    color: var(--white) !important;
+}
+
+
+@media (max-width: 991px) {
+    body:has(.bread-team) {
+        .glow-target {
+            position: absolute;
+        }
+    }
+}

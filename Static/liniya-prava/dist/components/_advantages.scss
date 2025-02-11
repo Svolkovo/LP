@@ -1,0 +1,29 @@
+.advantages__cell {
+    position: relative;
+
+    &::after {
+        height: 88%;
+        position: absolute;
+        content: "";
+        top: 0;
+        right: -0.87rem !important;
+        width: 1px;
+        background-color: #545454;
+    }
+
+    &::before {
+        height: 1px;
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #545454;
+    }
+
+    &:nth-child(4n+4) {
+        &::after {
+            content: unset !important;
+        }
+    }
+}
